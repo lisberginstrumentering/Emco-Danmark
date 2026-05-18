@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Løsning — Målesystemer i høj kvalitet til din applikation | Emco Danmark</title>
+<meta name="description" content="Vi sammensætter kvalitetskomponenter til komplette målesystemer for flow, level og temperatur. Tilpasset din applikation, med fuld dokumentation (ISO 9001, EN 3834-2, PED) og over 50 års erfaring fra dansk industri.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://emcodanmark.dk/emco-loesning.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Emco Danmark">
+<meta property="og:locale" content="da_DK">
+<meta property="og:title" content="Løsning — Målesystemer i høj kvalitet til din applikation | Emco Danmark">
+<meta property="og:description" content="Vi sammensætter kvalitetskomponenter til komplette målesystemer for flow, level og temperatur. Tilpasset din applikation, med fuld dokumentation (ISO 9001, EN 3834-2, PED) og over 50 års erfaring fra dansk industri.">
+<meta property="og:url" content="https://emcodanmark.dk/emco-loesning.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Løsning — Målesystemer i høj kvalitet til din applikation | Emco Danmark">
+<meta name="twitter:description" content="Vi sammensætter kvalitetskomponenter til komplette målesystemer for flow, level og temperatur. Tilpasset din applikation, med fuld dokumentation (ISO 9001, EN 3834-2, PED) og over 50 års erfaring fra dansk industri.">
+<meta name="geo.region" content="DK">
+<meta name="geo.placename" content="Hillerød">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter+Tight:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;900&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --red: #c43124;
+    --red-deep: #9d2218;
+    --red-fg: #f0ede5;
+    --red-muted: rgba(240,237,229,0.7);
+    --red-muted-strong: rgba(240,237,229,0.85);
+    --red-border: rgba(240,237,229,0.18);
+
+    --cream: #f0ede5;
+    --cream-fg: #15171a;
+    --cream-muted: rgba(21,23,26,0.62);
+    --cream-muted-strong: rgba(21,23,26,0.78);
+    --cream-border: rgba(21,23,26,0.18);
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--red);
+    color: var(--red-fg);
+    font-family: 'Inter Tight', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  /* ============= SHARED TYPE ============= */
+  .display {
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    line-height: 0.95;
+    font-weight: 800;
+  }
+  .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-weight: 500;
+  }
+  .accent { color: var(--red); }
+  body .accent.on-red { color: var(--cream); opacity: 0.55; }
+
+  .wrap { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
+
+  /* ============= MOCKUP BAND ============= */
+  .mockup-band {
+    background: #0a0a0a;
+    color: var(--red-fg);
+    padding: 0.5rem 2rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+  }
+  .mockup-band a { color: var(--red-fg); text-decoration: underline; }
+
+  /* ============= NAV ============= */
+  nav.top {
+    background: var(--red);
+    padding: 0.85rem 0;
+  }
+  .nav-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 2rem;
+  }
+  .nav-right { display: flex; align-items: center; gap: 2rem; }
+  .nav-logo {
+    display: flex; align-items: center; gap: 0.6rem;
+    color: var(--red-fg);
+    text-decoration: none;
+  }
+  .nav-logo svg { height: 1.05em; width: auto; }
+  .nav-logo .name {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 1.3rem;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  }
+  .nav-links {
+    display: flex; gap: 2rem; align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    font-weight: 500;
+  }
+  .nav-links a {
+    color: var(--red-muted-strong);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .nav-links a:hover, .nav-links a.active { color: var(--red-fg); }
+
+  /* DROPDOWN */
+  .nav-dropdown {
+    position: relative;
+  }
+  .nav-dropdown-trigger {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--red-muted);
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    transition: color 0.15s;
+  }
+  .nav-dropdown-trigger:hover,
+  .nav-dropdown:focus-within .nav-dropdown-trigger,
+  .nav-dropdown.open .nav-dropdown-trigger { color: var(--red-fg); }
+  .nav-dropdown-trigger::after {
+    content: '';
+    width: 0; height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid currentColor;
+    transition: transform 0.15s;
+  }
+  .nav-dropdown:hover .nav-dropdown-trigger::after,
+  .nav-dropdown:focus-within .nav-dropdown-trigger::after,
+  .nav-dropdown.open .nav-dropdown-trigger::after { transform: rotate(180deg); }
+
+  .nav-dropdown-menu {
+    position: absolute;
+    top: calc(100% + 0.85rem);
+    right: 0;
+    min-width: 240px;
+    background: var(--red-deep);
+    border: 1px solid var(--red-border);
+    padding: 0.5rem 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4px);
+    transition: opacity 0.15s, transform 0.15s, visibility 0.15s;
+    z-index: 110;
+  }
+  .nav-dropdown:hover .nav-dropdown-menu,
+  .nav-dropdown:focus-within .nav-dropdown-menu,
+  .nav-dropdown.open .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .nav-dropdown-menu a {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.7rem 1.2rem;
+    color: var(--red-muted);
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    border-bottom: 1px solid var(--red-border);
+    transition: color 0.15s, background 0.15s;
+  }
+  .nav-dropdown-menu a:last-child { border-bottom: none; }
+  .nav-dropdown-menu a:hover { color: var(--red-fg); background: rgba(240,237,229,0.04); }
+  .nav-dropdown-menu .meta {
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    color: rgba(240,237,229,0.45);
+  }
+  .nav-cta {
+    padding: 0.55rem 1.1rem;
+    display: inline-flex;
+    align-items: center;
+    background: var(--cream);
+    color: var(--red);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.15s;
+  }
+  .nav-cta:hover { transform: translateY(-2px); }
+
+  /* ============= BREADCRUMB ============= */
+  .breadcrumb {
+    background: var(--cream);
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--cream-border);
+  }
+  .breadcrumb-inner {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--cream-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+  }
+  .breadcrumb-inner a { color: var(--cream-muted); text-decoration: none; }
+  .breadcrumb-inner .sep { margin: 0 0.75rem; opacity: 0.5; }
+  .breadcrumb-inner .current { color: var(--cream-fg); font-weight: 700; }
+
+  /* ============= HERO (red) ============= */
+  .hero {
+    background: var(--red);
+    padding: 5rem 0 6rem;
+    color: var(--red-fg);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-eyebrow {
+    color: var(--red-muted);
+    margin-bottom: 1.75rem;
+    display: flex; align-items: center; gap: 1rem;
+  }
+  .hero-eyebrow .num { color: var(--red-fg); font-weight: 700; margin-right: 0.5rem; }
+  .hero-eyebrow::after {
+    content: ''; flex: 0 0 auto; width: 200px; max-width: 30vw; height: 1px;
+    background: var(--red-border);
+  }
+  .hero h1 {
+    font-size: clamp(2.6rem, 6.5vw, 5.8rem);
+    margin-bottom: 1.75rem;
+    max-width: 13ch;
+  }
+  .hero-lead {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    max-width: 620px;
+    color: var(--red-muted-strong);
+  }
+
+  /* Hero meta strip */
+  .hero-meta {
+    margin-top: 1.25rem; padding-top: 1.25rem;
+    border-top: 1px solid var(--red-border);
+    display: grid;
+    grid-template-columns: 2.4fr 1fr 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  .hero-meta .lead-text {
+    color: var(--red-muted-strong);
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  .hero-meta .item { display: flex; flex-direction: column; gap: 0.5rem; }
+  .hero-meta .item .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: var(--red-muted);
+  }
+  .hero-meta .item .value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--red-fg);
+    font-weight: 500;
+  }
+
+  /* ============= SECTIONS ON CREAM ============= */
+  section {
+    background: var(--cream);
+    color: var(--cream-fg);
+    padding: 6rem 0;
+    border-bottom: 1px solid var(--cream-border);
+  }
+  section:last-of-type { border-bottom: none; }
+  .section-eyebrow {
+    color: var(--cream-muted);
+    margin-bottom: 1.5rem;
+    display: flex; align-items: center; gap: 1rem;
+  }
+  .section-eyebrow .num { color: var(--red); font-weight: 700; margin-right: 0.5rem; }
+  .section-eyebrow::after {
+    content: ''; flex: 0 0 auto; width: 200px; max-width: 30vw; height: 1px;
+    background: var(--cream-border);
+  }
+  section h2.display {
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    margin-bottom: 1.5rem;
+    max-width: 22ch;
+  }
+  section .section-lead {
+    font-size: 1.05rem;
+    line-height: 1.65;
+    max-width: 700px;
+    color: var(--cream-muted-strong);
+    margin-bottom: 4rem;
+  }
+
+  /* ============= PROBLEM SECTION (cream, with crossed-out items) ============= */
+  .problem-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border-top: 2px solid var(--cream-fg);
+    border-left: 2px solid var(--cream-fg);
+  }
+  .problem-cell {
+    padding: 2.5rem 2rem;
+    border-right: 2px solid var(--cream-fg);
+    border-bottom: 2px solid var(--cream-fg);
+    display: flex; flex-direction: column; gap: 0.85rem;
+  }
+  .problem-cell.without {
+    background: transparent;
+  }
+  .problem-cell.with {
+    background: var(--cream-fg);
+    color: var(--cream);
+  }
+  .problem-cell .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-weight: 700;
+  }
+  .problem-cell.without .label { color: var(--red); }
+  .problem-cell.with .label { color: var(--cream); opacity: 0.55; }
+  .problem-cell h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    font-size: 1.5rem;
+    line-height: 1.05;
+  }
+  .problem-cell ul {
+    list-style: none;
+    margin-top: 0.5rem;
+    display: flex; flex-direction: column; gap: 0.6rem;
+  }
+  .problem-cell li {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  .problem-cell.without li::before {
+    content: '×';
+    position: absolute;
+    left: 0; top: -2px;
+    color: var(--red);
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  .problem-cell.with li {
+    color: var(--cream);
+    opacity: 0.85;
+  }
+  .problem-cell.with li::before {
+    content: '→';
+    position: absolute;
+    left: 0; top: 0;
+    color: var(--red);
+    font-weight: 700;
+  }
+
+  /* ============= JOURNEY ILLUSTRATION (cream) ============= */
+  .journey-svg-wrap {
+    margin: 1rem 0 4rem;
+    background: transparent;
+  }
+  .journey-svg {
+    width: 100%; height: auto;
+    color: var(--cream-fg);
+    display: block;
+  }
+  /* Subtle pulse animation for the central red bar */
+  @keyframes pulse-bar {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.85; }
+  }
+  .journey-svg .central-bar { animation: pulse-bar 4s ease-in-out infinite; }
+
+  /* ============= VALUES (3 columns of value props) ============= */
+  .values {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border-top: 2px solid var(--cream-fg);
+    border-left: 2px solid var(--cream-fg);
+  }
+  .value {
+    padding: 2.5rem 2rem;
+    border-right: 2px solid var(--cream-fg);
+    border-bottom: 2px solid var(--cream-fg);
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+  .value .num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--red);
+    font-weight: 700;
+    letter-spacing: 0.3em;
+  }
+  .value h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    font-size: 1.45rem;
+    line-height: 1.05;
+  }
+  .value p {
+    font-size: 0.97rem;
+    line-height: 1.55;
+    color: var(--cream-muted-strong);
+  }
+
+  /* ============= MEASURE GRID ============= */
+  .measure-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+  }
+  .measure-card {
+    background: #fff;
+    padding: 2rem;
+    display: flex; flex-direction: column; gap: 1rem;
+    border: 1px solid var(--cream-border);
+  }
+  .measure-card .icon {
+    width: 56px; height: 56px;
+    color: var(--red);
+  }
+  .measure-card .icon svg { width: 100%; height: 100%; display: block; }
+  .measure-card h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    font-size: 1.25rem;
+    line-height: 1;
+    margin-top: 0.5rem;
+  }
+  .measure-card p {
+    font-size: 0.9rem; line-height: 1.5;
+    color: var(--cream-muted-strong);
+  }
+  .measure-card .vendors {
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid var(--cream-border);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--cream-muted);
+    font-weight: 500;
+  }
+
+  /* ============= CTA (red) ============= */
+  .cta {
+    background: var(--red);
+    color: var(--red-fg);
+    padding: 6rem 0;
+    text-align: center;
+    border: none;
+    position: relative;
+  }
+  .cta h2.display {
+    font-size: clamp(2.4rem, 5.5vw, 4.5rem);
+    max-width: 18ch;
+    margin: 0 auto 2rem;
+    color: var(--red-fg);
+  }
+  .cta p {
+    font-size: 1.1rem; line-height: 1.5;
+    color: var(--red-muted-strong);
+    max-width: 50ch;
+    margin: 0 auto 2.5rem;
+  }
+  .cta-button {
+    display: inline-flex; align-items: center; gap: 0.65rem;
+    padding: 1.25rem 2.5rem;
+    background: var(--cream);
+    color: var(--red);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.15s;
+  }
+  .cta-button::after {
+    content: '→';
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 700;
+  }
+  .cta-button:hover { transform: translateY(-2px); }
+  .cta .secondary {
+    margin-top: 1.5rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    color: var(--red-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+  }
+
+  /* ============= FOOTER ============= */
+  footer.site-footer {
+    background: var(--cream);
+    color: var(--cream-fg);
+    padding: 4rem 0 2rem;
+    border: none;
+    border-top: 4px solid var(--red);
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+  .footer-brand .footer-logo {
+    display: flex; align-items: center; gap: 0.6rem;
+    margin-bottom: 1rem;
+    color: var(--red);
+  }
+  .footer-brand .footer-logo svg { height: 1.3em; width: auto; }
+  .footer-brand .footer-wordmark {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  color: var(--red); }
+  .footer-brand p {
+    color: var(--cream-muted-strong);
+    font-size: 0.92rem;
+    line-height: 1.55;
+    max-width: 28ch;
+  }
+  .footer-col h4 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: var(--cream-muted);
+    margin-bottom: 1.25rem;
+    font-weight: 700;
+  }
+  .footer-col a, .footer-col span { display: block;
+    color: var(--cream-fg);
+    text-decoration: none;
+    font-size: 0.95rem;
+    margin-bottom: 0.6rem;
+    transition: color 0.15s; }
+  .footer-col a:hover { color: var(--red); }
+  .footer-bottom {
+    padding-top: 2rem;
+    border-top: 1px solid var(--cream-border);
+    display: flex; justify-content: space-between;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: var(--cream-muted);
+  }
+
+  /* ============= RESPONSIVE ============= */
+  @media (max-width: 900px) {
+    .hero-meta { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    .hero-meta .lead-text { grid-column: span 2; }
+    .problem-grid { grid-template-columns: 1fr; }
+    .values { grid-template-columns: 1fr; }
+    .measure-grid { grid-template-columns: 1fr 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .nav-links { display: none; }
+  }
+  @media (max-width: 600px) {
+    .measure-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .footer-bottom { flex-direction: column; gap: 0.75rem; }
+    section { padding: 4rem 0; }
+    .hero { padding: 3.5rem 0 4.5rem; }
+  }
+
+  /* løsning: compact hero, less red surface */
+  header.hero { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+  header.hero .hero-lead { margin-bottom: 0; }
+
+  .nav-phone {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--red-fg);
+    text-decoration: none;
+    opacity: 0.9;
+    transition: opacity 0.15s;
+    white-space: nowrap;
+  }
+  .nav-phone:hover { opacity: 1; }
+  @media (max-width: 760px) {
+    .nav-phone { display: none; }
+  }
+
+  /* === CREAM TOP BAR + RED LOGO (v9 override) === */
+  .nav, nav.top {
+    background: var(--cream);
+    border-bottom: 1px solid var(--cream-border);
+    color: var(--cream-fg);
+  }
+  .nav-logo, .nav-logo a, .nav-logo .name {
+    color: var(--red);
+  }
+  .nav-links a,
+  .nav-links .nav-dropdown-trigger {
+    color: var(--cream-fg);
+    background: transparent;
+    border: none;
+    transition: color 0.15s;
+  }
+  .nav-links a:hover,
+  .nav-links .nav-dropdown-trigger:hover,
+  .nav-links a.active {
+    color: var(--red);
+  }
+  .nav-phone {
+    color: var(--cream-fg);
+    opacity: 1;
+  }
+  .nav-phone:hover { color: var(--red); }
+  .nav-cta {
+    background: var(--red);
+    color: var(--cream);
+  }
+  .nav-cta:hover {
+    background: var(--red-deep);
+    color: var(--cream);
+  }
+  /* CTA stack — small phone link sits beneath the button */
+  .nav-cta-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.35rem;
+  }
+  .nav-cta-stack .nav-phone {
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+  }
+  /* Dropdown menu still sits on a cream surface — make sure menu items
+     remain readable. The menu itself is rendered via existing rules; we
+     just ensure its surface and text colour fit the cream nav. */
+  .nav-dropdown-menu {
+    background: var(--cream);
+    border: 1px solid var(--cream-border);
+  }
+  .nav-dropdown-menu a {
+    color: var(--cream-fg);
+  }
+  .nav-dropdown-menu a:hover {
+    background: rgba(196, 49, 36, 0.08);
+    color: var(--red);
+  }
+  .nav-dropdown-menu .meta {
+    color: var(--cream-muted);
+  }
+
+  /* === VALUE GRID (løsning section 02) === */
+  .value-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2.5rem;
+  }
+  .value-card {
+    border-top: 1px solid var(--cream-border);
+    padding-top: 1.5rem;
+  }
+  .value-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    color: var(--red);
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .value-card h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.25;
+    color: var(--cream-fg);
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.75rem;
+    font-weight: 900;
+  }
+  .value-card p {
+    color: var(--cream-muted-strong);
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+  @media (max-width: 880px) {
+    .value-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  }
+
+  /* === LØSNING HERO SHRINK (v14) === */
+  .hero h1, h1.display { font-size: clamp(1.8rem, 3.6vw, 3rem); max-width: 18ch; }
+  .hero { padding-top: 4rem; padding-bottom: 3rem; }
+
+  /* === SIMPLE EYEBROW (v14) === */
+  .simple-eyebrow {
+    margin-bottom: 2.5rem;
+    display: inline-block;
+  }
+  .simple-eyebrow::after {
+    content: '';
+    display: inline-block;
+    width: 4rem;
+    height: 1px;
+    background: currentColor;
+    opacity: 0.3;
+    margin-left: 1rem;
+    vertical-align: middle;
+  }
+
+  /* === PROCESS DIAGRAM (v14) === */
+  .process-section {
+    padding: 4rem 2rem 5rem;
+    background: var(--cream);
+    color: var(--cream-fg);
+  }
+  .process-section .wrap {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  .process-section .process-h2 {
+    color: var(--cream-fg);
+    margin: 0 0 3rem;
+    max-width: 22ch;
+  }
+  .process-diagram {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .process-diagram svg {
+    width: 100%;
+    height: auto;
+    min-width: 760px;
+    max-width: 1100px;
+    display: block;
+    margin: 0 auto;
+    color: var(--cream-fg);
+  }
+  @media (max-width: 760px) {
+    .process-section { padding: 3rem 1.5rem 4rem; }
+    .process-section .process-h2 { margin-bottom: 2rem; }
+  }
+
+  /* === NAV INNER (v14) — align nav content with page .wrap === */
+  .nav { padding: 0; }
+  .nav-inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0.85rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  /* Restore stickiness behaviour from .nav (already there); ensure nav
+     remains a positioning context. */
+
+  /* === NAV TOP padding reset (v14) === */
+  nav.top { padding: 0 !important; }
+
+  /* === PROCESS DIAGRAM IN HERO (v15) === */
+  .process-diagram-hero {
+    width: 100%;
+    margin-top: 3rem;
+    overflow-x: auto;
+  }
+  .process-diagram-hero svg {
+    width: 100%;
+    height: auto;
+    min-width: 760px;
+    max-width: 1100px;
+    display: block;
+  }
+  /* Hide the now-unused legacy process-section styling — handled by removal */
+  @media (max-width: 760px) {
+    .process-diagram-hero { margin-top: 2rem; }
+  }
+
+  /* === CTA H2 SHRINK (v15 universal) === */
+  .cta h2, .cta .display { font-size: clamp(1.7rem, 3.4vw, 3rem) !important; margin-bottom: 1.5rem; }
+
+  /* === NAV TOP CONSISTENCY (v18) — match nav.nav layout === */
+  nav.top { padding: 0 !important; background: var(--cream); border-bottom: 1px solid var(--cream-border); }
+  nav.top .nav-inner {
+    max-width: 1300px !important;
+    margin: 0 auto !important;
+    padding: 0.85rem 2rem !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    gap: 2rem;
+  }
+  nav.top .nav-logo {
+    color: var(--red);
+    font-size: 1rem;
+  }
+  nav.top .nav-logo svg { height: 1.05em; width: auto; }
+  nav.top .nav-logo .name {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 1.3rem;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  }
+
+  /* === LØSNING HERO FULL-WIDTH (v18) === */
+  header.hero h1.display {
+    font-size: clamp(1.9rem, 4.2vw, 3.6rem) !important;
+    max-width: none !important;
+    margin-bottom: 1.5rem !important;
+  }
+  header.hero .hero-lead {
+    max-width: none !important;
+    font-size: 1.15rem;
+    line-height: 1.6;
+  }
+  header.hero .wrap {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  /* Process diagram explicitly centered */
+  .process-diagram-hero {
+    margin: 3rem auto 0 !important;
+    max-width: 1100px;
+  }
+
+  /* === HVORFOR EMCO DANMARK (v18) — no separator line, larger === */
+  .value-card {
+    border-top: none !important;
+    padding-top: 0 !important;
+  }
+  .value-grid {
+    gap: 3rem !important;
+    margin-top: 3.5rem !important;
+  }
+  .value-card h3 {
+    font-size: 1.3rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .value-card p {
+    font-size: 1.02rem !important;
+    line-height: 1.65 !important;
+  }
+  .value-num {
+    font-size: 0.75rem !important;
+    margin-bottom: 1.25rem !important;
+  }
+  /* Make the Hvorfor Emco Danmark section itself a bit roomier */
+  section .wrap .simple-eyebrow {
+    font-size: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* === NAV TOP THIN (v19) — match forside dimensions === */
+  nav.top .nav-cta {
+    padding: 0.5rem 0.95rem !important;
+    font-size: 0.65rem !important;
+    letter-spacing: 0.2em !important;
+  }
+  nav.top .nav-phone {
+    font-size: 0.55rem !important;
+    letter-spacing: 0.15em !important;
+  }
+  nav.top .nav-cta-stack {
+    gap: 0.25rem !important;
+  }
+  nav.top .wrap.nav-inner,
+  nav.top .nav-inner {
+    max-width: 1300px !important;
+    padding: 0.85rem 2rem !important;
+    margin: 0 auto !important;
+  }
+
+  /* Emco Danmark wordmark - stablet slab serif logo */
+  .emco-wordmark {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 0.92;
+    color: var(--red);
+    font-family: 'Roboto Slab', 'Roboto Slab Fallback', Georgia, serif;
+  }
+  .emco-wordmark .emco-line-top {
+    font-weight: 900;
+    font-size: 1.5rem;
+    letter-spacing: -0.01em;
+  }
+  .emco-wordmark .emco-line-bottom {
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 0;
+    margin-top: 0.05em;
+  }
+  .emco-wordmark-footer {
+    color: var(--red);
+  }
+  .emco-wordmark-footer .emco-line-top {
+    font-size: 1.85rem;
+  }
+  .emco-wordmark-footer .emco-line-bottom {
+    font-size: 1.35rem;
+  }
+  /* Sørg for at logoet i nav stadig får rød farve på cream-nav siderne */
+  .nav-logo .emco-wordmark { color: var(--red); }
+
+  /* === APPLIKATIONER GRID === */
+  .appgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2.5rem;
+  }
+  .appcell {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 1.1rem 1.25rem;
+    background: #fff;
+    border: 1px solid var(--cream-border);
+  }
+  .appcell .appnum {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: var(--red);
+  }
+  .appcell .appname {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    font-size: 1.25rem;
+    color: var(--cream-fg);
+  }
+  @media (max-width: 600px) {
+    .appgrid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============= MOCKUP BAND ============= -->
+<div class="mockup-band">
+  MOCKUP · EMCO DANMARK · LØSNING · <a href="index.html">← TILBAGE TIL FORSIDEN</a>
+</div>
+
+<!-- ============= NAV ============= -->
+<nav class="top">
+    <div class="wrap nav-inner">
+    <a class="nav-logo" href="index.html">
+      <div class="emco-wordmark" aria-label="Emco Danmark">
+        <span class="emco-line-top">Emco</span>
+        <span class="emco-line-bottom">Danmark</span>
+      </div>
+    </a>
+    <div class="nav-right">
+      <div class="nav-links">
+      <a href="emco-loesning.html" class="active">Løsning</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" type="button" aria-haspopup="true" aria-expanded="false">Leverandører</button>
+        <div class="nav-dropdown-menu" role="menu">
+          <a href="emco-controls.html" role="menuitem"><span>Emco Controls</span><span class="meta">DP-Flow</span></a>
+          <a href="emco-fuji.html" role="menuitem"><span>Fuji Electric</span><span class="meta">Transmittere</span></a>
+          <a href="emco-valves.html" role="menuitem"><span>Lisberg Valves</span><span class="meta">Manifolds</span></a>
+        </div>
+      </div>
+    </div>
+      <div class="nav-cta-stack">
+        <a class="nav-cta" href="emco-kontakt.html">Kontakt os →</a>
+        <a href="tel:+4533550162" class="nav-phone">+45 33 55 01 62</a>
+      </div>
+    </div>
+  </div>
+    
+  </nav>
+
+<!-- ============= BREADCRUMB ============= -->
+<div class="breadcrumb">
+  <div class="wrap breadcrumb-inner">
+    <a href="index.html">Emco Danmark</a>
+    <span class="sep">/</span>
+    <span class="current">Løsning</span>
+  </div>
+</div>
+
+<!-- ============= HERO ============= -->
+<header class="hero">
+  <div class="wrap">
+    <h1 class="display">Målesystemer i høj kvalitet — tilpasset din applikation</h1>
+    <p class="hero-lead">Vi sammensætter kvalitetskomponenter til komplette målesystemer for flow, level og temperatur. Hvert system bygges til den specifikke applikation, med fuld dokumentation og over 50 års erfaring bag.</p>
+  </div>
+</header>
+
+<!-- ============= KVALITET & TILPASNING ============= -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow section-eyebrow simple-eyebrow">DET DU FÅR</div>
+
+    <div class="value-grid">
+      <div class="value-card">
+        <div class="value-num">01</div>
+        <h3>Høj kvalitet og fuld dokumentation</h3>
+        <p>Certificeret efter ISO 9001:2015, EN 3834-2 og PED 2014/68/EU Modul H. Materialesporbarhed, NDT af svejsninger og certifikater leveres samlet — klar til godkendelse.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-num">02</div>
+        <h3>Tilpasset din proces</h3>
+        <p>Egen produktion med certificerede svejsere, CNC-bearbejdning og et bredt udvalg af materialer — fra carbon steel til Inconel. Systemet dimensioneres præcist til kundens behov.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-num">03</div>
+        <h3>Vi forstår applikationen</h3>
+        <p>Erfaring fra internationale projekter inden for olie og gas, kemi, power og skibsbygning. Vi kender de krav, der følger med den enkelte applikation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= APPLIKATIONER ============= -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow section-eyebrow simple-eyebrow">APPLIKATIONER VI LØSER</div>
+    <p class="section-lead">Fra niveau og damp til røggas — vi leverer målesystemer, der er bygget til den konkrete opgave.</p>
+    <div class="appgrid">
+      <div class="appcell"><span class="appnum">01</span><span class="appname">Niveau</span></div>
+      <div class="appcell"><span class="appnum">02</span><span class="appname">Damp</span></div>
+      <div class="appcell"><span class="appnum">03</span><span class="appname">Gas</span></div>
+      <div class="appcell"><span class="appnum">04</span><span class="appname">Olie</span></div>
+      <div class="appcell"><span class="appnum">05</span><span class="appname">Køl</span></div>
+      <div class="appcell"><span class="appnum">06</span><span class="appname">Flow</span></div>
+      <div class="appcell"><span class="appnum">07</span><span class="appname">Temperatur</span></div>
+      <div class="appcell"><span class="appnum">08</span><span class="appname">Luft</span></div>
+      <div class="appcell"><span class="appnum">09</span><span class="appname">Væsker</span></div>
+      <div class="appcell"><span class="appnum">10</span><span class="appname">Røggas</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= CTA ============= -->
+<section class="cta" id="cta">
+  <div class="wrap">
+    <h2 class="display">Lad os dimensionere den rigtige løsning</h2>
+    <p>Send et datablad, en P&amp;ID eller en kort beskrivelse af måleopgaven — så vender vi tilbage med et forslag.</p>
+    <a href="emco-kontakt.html" class="cta-button">Kontakt os</a>
+    <div class="secondary">Eller ring direkte · +45 33 55 01 62</div>
+  </div>
+</section>
+
+<!-- ============= FOOTER ============= -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+        <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="emco-wordmark emco-wordmark-footer" aria-label="Emco Danmark">
+              <span class="emco-line-top">Emco</span>
+              <span class="emco-line-bottom">Danmark</span>
+            </div>
+        </div>
+        <p>Flow-, level- og temperaturmåling for dansk industri. Kvalitetsleverandører samlet i én løsning.</p>
+      </div>
+        <div class="footer-col">
+          <h4>Om os</h4>
+          <a href="emco-loesning.html">Løsning</a>
+          <a href="index.html#brands">Leverandører</a>
+        </div>
+        <div class="footer-col">
+          <h4>Adresse</h4>
+          <span>Høgevej 6</span>
+          <span>3400 Hillerød</span>
+        </div>
+        <div class="footer-col">
+          <h4>Kontakt</h4>
+          <a href="tel:+4533550162">+45 33 55 01 62</a>
+          <a href="mailto:an@emcodanmark.dk">an@emcodanmark.dk</a>
+          <a href="emco-kontakt.html">Skriv til os</a>
+        </div>
+      </div>
+    <div class="footer-bottom">
+        <span>Emco Danmark Instrumentering ApS · CVR-nr. 12345678</span>
+      </div>
+  </div>
+</footer>
+
+<script>
+  // Dropdown: click/touch toggle (hover handles desktop pointer)
+  document.querySelectorAll('.nav-dropdown').forEach(function(dd) {
+    var trigger = dd.querySelector('.nav-dropdown-trigger');
+    if (!trigger) return;
+    trigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var isOpen = dd.classList.toggle('open');
+      trigger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+  });
+  document.addEventListener('click', function() {
+    document.querySelectorAll('.nav-dropdown.open').forEach(function(dd) {
+      dd.classList.remove('open');
+      var t = dd.querySelector('.nav-dropdown-trigger');
+      if (t) t.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
+
+<!-- ===== EMCO MOBILE MENU (injected) ===== -->
+<style>
+  .emco-burger{
+    display:none; position:fixed; z-index:1002;
+    top:14px; right:16px;
+    width:44px; height:44px; padding:0;
+    background:#f0ede5; border:1px solid rgba(196,49,36,0.35);
+    border-radius:8px; cursor:pointer;
+  }
+  body.emco-menu-open .emco-burger{ background:transparent; border-color:rgba(240,237,229,0.4); }
+  body.emco-menu-open .emco-burger span::before,
+  body.emco-menu-open .emco-burger span::after{ background:#f0ede5; }
+  .emco-burger span,
+  .emco-burger span::before,
+  .emco-burger span::after{
+    content:""; position:absolute; left:50%; width:20px; height:2px;
+    background:#c43124; border-radius:2px; transition:transform .25s ease, opacity .2s ease;
+    transform:translateX(-50%);
+  }
+  .emco-burger span{ top:50%; margin-top:-1px; }
+  .emco-burger span::before{ top:-7px; }
+  .emco-burger span::after{ top:7px; }
+  body.emco-menu-open .emco-burger span{ background:transparent; }
+  body.emco-menu-open .emco-burger span::before{ transform:translateX(-50%) translateY(7px) rotate(45deg); }
+  body.emco-menu-open .emco-burger span::after{ transform:translateX(-50%) translateY(-7px) rotate(-45deg); }
+
+  .emco-mobile-nav{
+    position:fixed; inset:0; z-index:1001;
+    background:#c43124; color:#f0ede5;
+    display:flex; flex-direction:column; justify-content:center;
+    gap:0.35rem; padding:5rem 2rem 3rem;
+    transform:translateY(-100%); transition:transform .32s cubic-bezier(.4,0,.2,1);
+    overflow-y:auto;
+  }
+  body.emco-menu-open .emco-mobile-nav{ transform:translateY(0); }
+  .emco-mobile-nav a{
+    color:#f0ede5; text-decoration:none;
+    font-family:'Barlow Condensed','Inter Tight',sans-serif;
+    font-weight:700; font-size:1.9rem; letter-spacing:-0.01em;
+    text-transform:uppercase; padding:0.55rem 0;
+    border-bottom:1px solid rgba(240,237,229,0.18);
+  }
+  .emco-mobile-nav a:last-child{ border-bottom:none; }
+  .emco-mobile-nav a.sub{
+    font-size:1.05rem; font-weight:500; text-transform:none;
+    letter-spacing:0.02em; opacity:0.85; padding:0.4rem 0 0.4rem 1rem;
+    border-bottom:1px solid rgba(240,237,229,0.10);
+  }
+  .emco-mobile-nav .grouplabel{
+    font-family:'JetBrains Mono',monospace; font-size:0.7rem;
+    letter-spacing:0.3em; text-transform:uppercase;
+    opacity:0.6; margin-top:1rem; padding-bottom:0.3rem;
+  }
+  .emco-mobile-nav .mphone{
+    margin-top:1.5rem; font-family:'JetBrains Mono',monospace;
+    font-size:0.95rem; font-weight:500; letter-spacing:0.12em;
+    opacity:0.9; text-transform:none; border-bottom:none;
+  }
+  @media (max-width:900px){
+    .emco-burger{ display:block; }
+  }
+</style>
+
+<button class="emco-burger" type="button" aria-label="Åbn menu" aria-expanded="false" aria-controls="emcoMobileNav">
+  <span aria-hidden="true"></span>
+</button>
+
+<nav class="emco-mobile-nav" id="emcoMobileNav" aria-label="Mobilnavigation">
+  <a href="index.html">Forside</a>
+  <a href="emco-loesning.html">Løsning</a>
+  <div class="grouplabel">Leverandører</div>
+  <a class="sub" href="emco-controls.html">Emco Controls — DP-Flow</a>
+  <a class="sub" href="emco-fuji.html">Fuji Electric — Transmittere</a>
+  <a class="sub" href="emco-valves.html">Lisberg Valves — Manifolds</a>
+  <a href="emco-kontakt.html">Kontakt os</a>
+  <a class="mphone" href="tel:+4533550162">+45 33 55 01 62</a>
+</nav>
+
+<script>
+(function(){
+  var burger = document.querySelector('.emco-burger');
+  var nav = document.getElementById('emcoMobileNav');
+  if(!burger || !nav) return;
+  var body = document.body;
+  function close(){
+    body.classList.remove('emco-menu-open');
+    burger.setAttribute('aria-expanded','false');
+    burger.setAttribute('aria-label','Åbn menu');
+  }
+  function toggle(){
+    var open = body.classList.toggle('emco-menu-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.setAttribute('aria-label', open ? 'Luk menu' : 'Åbn menu');
+  }
+  burger.addEventListener('click', toggle);
+  nav.addEventListener('click', function(e){ if(e.target.tagName === 'A') close(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') close(); });
+  window.addEventListener('resize', function(){ if(window.innerWidth > 900) close(); });
+})();
+</script>
+<!-- ===== END EMCO MOBILE MENU ===== -->
+
+</body>
+</html>

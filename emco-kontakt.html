@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt Emco Danmark — Hillerød | Målesystemer til dansk industri</title>
+<meta name="description" content="Kontakt Emco Danmark i Hillerød for målesystemer til flow, level og temperatur. Send et datablad eller en P&amp;ID, så vender vi tilbage med et forslag. Ring +45 33 55 01 62 eller skriv til an@emcodanmark.dk.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://emcodanmark.dk/emco-kontakt.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Emco Danmark">
+<meta property="og:locale" content="da_DK">
+<meta property="og:title" content="Kontakt Emco Danmark — Hillerød | Målesystemer til dansk industri">
+<meta property="og:description" content="Kontakt Emco Danmark i Hillerød for målesystemer til flow, level og temperatur. Send et datablad eller en P&amp;ID, så vender vi tilbage med et forslag. Ring +45 33 55 01 62 eller skriv til an@emcodanmark.dk.">
+<meta property="og:url" content="https://emcodanmark.dk/emco-kontakt.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Kontakt Emco Danmark — Hillerød | Målesystemer til dansk industri">
+<meta name="twitter:description" content="Kontakt Emco Danmark i Hillerød for målesystemer til flow, level og temperatur. Send et datablad eller en P&amp;ID, så vender vi tilbage med et forslag. Ring +45 33 55 01 62 eller skriv til an@emcodanmark.dk.">
+<meta name="geo.region" content="DK">
+<meta name="geo.placename" content="Hillerød">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter+Tight:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;900&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --red: #c43124;
+    --red-deep: #9d2218;
+    --red-fg: #f0ede5;
+    --red-muted: rgba(240,237,229,0.7);
+    --red-muted-strong: rgba(240,237,229,0.85);
+    --red-border: rgba(240,237,229,0.18);
+
+    --cream: #f0ede5;
+    --cream-fg: #15171a;
+    --cream-muted: rgba(21,23,26,0.62);
+    --cream-muted-strong: rgba(21,23,26,0.78);
+    --cream-border: rgba(21,23,26,0.18);
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--red);
+    color: var(--red-fg);
+    font-family: 'Inter Tight', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  /* ============= SHARED TYPE ============= */
+  .display {
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    line-height: 0.95;
+    font-weight: 800;
+  }
+  .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-weight: 500;
+  }
+  .accent { color: var(--red); }
+  body .accent.on-red { color: var(--cream); opacity: 0.55; }
+
+  .wrap { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
+
+  /* ============= MOCKUP BAND ============= */
+  .mockup-band {
+    background: #0a0a0a;
+    color: var(--red-fg);
+    padding: 0.5rem 2rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+  }
+  .mockup-band a { color: var(--red-fg); text-decoration: underline; }
+
+  /* ============= NAV ============= */
+  nav.top {
+    background: var(--red);
+    padding: 0.85rem 0;
+  }
+  .nav-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 2rem;
+  }
+  .nav-right { display: flex; align-items: center; gap: 2rem; }
+  .nav-logo {
+    display: flex; align-items: center; gap: 0.6rem;
+    color: var(--red-fg);
+    text-decoration: none;
+  }
+  .nav-logo svg { height: 1.05em; width: auto; }
+  .nav-logo .name {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 1.3rem;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  }
+  .nav-links {
+    display: flex; gap: 2rem; align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    font-weight: 500;
+  }
+  .nav-links a {
+    color: var(--red-muted-strong);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .nav-links a:hover, .nav-links a.active { color: var(--red-fg); }
+
+  /* DROPDOWN */
+  .nav-dropdown {
+    position: relative;
+  }
+  .nav-dropdown-trigger {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--red-muted);
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    transition: color 0.15s;
+  }
+  .nav-dropdown-trigger:hover,
+  .nav-dropdown:focus-within .nav-dropdown-trigger,
+  .nav-dropdown.open .nav-dropdown-trigger { color: var(--red-fg); }
+  .nav-dropdown-trigger::after {
+    content: '';
+    width: 0; height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid currentColor;
+    transition: transform 0.15s;
+  }
+  .nav-dropdown:hover .nav-dropdown-trigger::after,
+  .nav-dropdown:focus-within .nav-dropdown-trigger::after,
+  .nav-dropdown.open .nav-dropdown-trigger::after { transform: rotate(180deg); }
+
+  .nav-dropdown-menu {
+    position: absolute;
+    top: calc(100% + 0.85rem);
+    right: 0;
+    min-width: 240px;
+    background: var(--red-deep);
+    border: 1px solid var(--red-border);
+    padding: 0.5rem 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4px);
+    transition: opacity 0.15s, transform 0.15s, visibility 0.15s;
+    z-index: 110;
+  }
+  .nav-dropdown:hover .nav-dropdown-menu,
+  .nav-dropdown:focus-within .nav-dropdown-menu,
+  .nav-dropdown.open .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .nav-dropdown-menu a {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.7rem 1.2rem;
+    color: var(--red-muted);
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    border-bottom: 1px solid var(--red-border);
+    transition: color 0.15s, background 0.15s;
+  }
+  .nav-dropdown-menu a:last-child { border-bottom: none; }
+  .nav-dropdown-menu a:hover { color: var(--red-fg); background: rgba(240,237,229,0.04); }
+  .nav-dropdown-menu .meta {
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    color: rgba(240,237,229,0.45);
+  }
+  .nav-cta {
+    padding: 0.55rem 1.1rem;
+    display: inline-flex;
+    align-items: center;
+    background: var(--cream);
+    color: var(--red);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.15s;
+  }
+  .nav-cta:hover { transform: translateY(-2px); }
+
+  /* ============= BREADCRUMB ============= */
+  .breadcrumb {
+    background: var(--cream);
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--cream-border);
+  }
+  .breadcrumb-inner {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--cream-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+  }
+  .breadcrumb-inner a { color: var(--cream-muted); text-decoration: none; }
+  .breadcrumb-inner .sep { margin: 0 0.75rem; opacity: 0.5; }
+  .breadcrumb-inner .current { color: var(--cream-fg); font-weight: 700; }
+
+  /* ============= HERO (red) ============= */
+  .hero {
+    background: var(--red);
+    padding: 5rem 0 6rem;
+    color: var(--red-fg);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-eyebrow {
+    color: var(--red-muted);
+    margin-bottom: 1.75rem;
+    display: flex; align-items: center; gap: 1rem;
+  }
+  .hero-eyebrow .num { color: var(--red-fg); font-weight: 700; margin-right: 0.5rem; }
+  .hero-eyebrow::after {
+    content: ''; flex: 0 0 auto; width: 200px; max-width: 30vw; height: 1px;
+    background: var(--red-border);
+  }
+  .hero h1 {
+    font-size: clamp(2.6rem, 6.5vw, 5.8rem);
+    margin-bottom: 1.75rem;
+    max-width: 13ch;
+  }
+  .hero-lead {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    max-width: 620px;
+    color: var(--red-muted-strong);
+  }
+
+  /* Hero meta strip */
+  .hero-meta {
+    margin-top: 1.25rem; padding-top: 1.25rem;
+    border-top: 1px solid var(--red-border);
+    display: grid;
+    grid-template-columns: 2.4fr 1fr 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  .hero-meta .lead-text {
+    color: var(--red-muted-strong);
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  .hero-meta .item { display: flex; flex-direction: column; gap: 0.5rem; }
+  .hero-meta .item .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: var(--red-muted);
+  }
+  .hero-meta .item .value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--red-fg);
+    font-weight: 500;
+  }
+
+  /* ============= SECTIONS ON CREAM ============= */
+  section {
+    background: var(--cream);
+    color: var(--cream-fg);
+    padding: 6rem 0;
+    border-bottom: 1px solid var(--cream-border);
+  }
+  section:last-of-type { border-bottom: none; }
+  .section-eyebrow {
+    color: var(--cream-muted);
+    margin-bottom: 1.5rem;
+    display: flex; align-items: center; gap: 1rem;
+  }
+  .section-eyebrow .num { color: var(--red); font-weight: 700; margin-right: 0.5rem; }
+  .section-eyebrow::after {
+    content: ''; flex: 0 0 auto; width: 200px; max-width: 30vw; height: 1px;
+    background: var(--cream-border);
+  }
+  section h2.display {
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    margin-bottom: 1.5rem;
+    max-width: 22ch;
+  }
+  section .section-lead {
+    font-size: 1.05rem;
+    line-height: 1.65;
+    max-width: 700px;
+    color: var(--cream-muted-strong);
+    margin-bottom: 4rem;
+  }
+
+  /* ============= PROBLEM SECTION (cream, with crossed-out items) ============= */
+  .problem-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border-top: 2px solid var(--cream-fg);
+    border-left: 2px solid var(--cream-fg);
+  }
+  .problem-cell {
+    padding: 2.5rem 2rem;
+    border-right: 2px solid var(--cream-fg);
+    border-bottom: 2px solid var(--cream-fg);
+    display: flex; flex-direction: column; gap: 0.85rem;
+  }
+  .problem-cell.without {
+    background: transparent;
+  }
+  .problem-cell.with {
+    background: var(--cream-fg);
+    color: var(--cream);
+  }
+  .problem-cell .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-weight: 700;
+  }
+  .problem-cell.without .label { color: var(--red); }
+  .problem-cell.with .label { color: var(--cream); opacity: 0.55; }
+  .problem-cell h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    font-size: 1.5rem;
+    line-height: 1.05;
+  }
+  .problem-cell ul {
+    list-style: none;
+    margin-top: 0.5rem;
+    display: flex; flex-direction: column; gap: 0.6rem;
+  }
+  .problem-cell li {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  .problem-cell.without li::before {
+    content: '×';
+    position: absolute;
+    left: 0; top: -2px;
+    color: var(--red);
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  .problem-cell.with li {
+    color: var(--cream);
+    opacity: 0.85;
+  }
+  .problem-cell.with li::before {
+    content: '→';
+    position: absolute;
+    left: 0; top: 0;
+    color: var(--red);
+    font-weight: 700;
+  }
+
+  /* ============= JOURNEY ILLUSTRATION (cream) ============= */
+  .journey-svg-wrap {
+    margin: 1rem 0 4rem;
+    background: transparent;
+  }
+  .journey-svg {
+    width: 100%; height: auto;
+    color: var(--cream-fg);
+    display: block;
+  }
+  /* Subtle pulse animation for the central red bar */
+  @keyframes pulse-bar {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.85; }
+  }
+  .journey-svg .central-bar { animation: pulse-bar 4s ease-in-out infinite; }
+
+  /* ============= VALUES (3 columns of value props) ============= */
+  .values {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border-top: 2px solid var(--cream-fg);
+    border-left: 2px solid var(--cream-fg);
+  }
+  .value {
+    padding: 2.5rem 2rem;
+    border-right: 2px solid var(--cream-fg);
+    border-bottom: 2px solid var(--cream-fg);
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+  .value .num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--red);
+    font-weight: 700;
+    letter-spacing: 0.3em;
+  }
+  .value h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    font-size: 1.45rem;
+    line-height: 1.05;
+  }
+  .value p {
+    font-size: 0.97rem;
+    line-height: 1.55;
+    color: var(--cream-muted-strong);
+  }
+
+  /* ============= MEASURE GRID ============= */
+  .measure-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+  }
+  .measure-card {
+    background: #fff;
+    padding: 2rem;
+    display: flex; flex-direction: column; gap: 1rem;
+    border: 1px solid var(--cream-border);
+  }
+  .measure-card .icon {
+    width: 56px; height: 56px;
+    color: var(--red);
+  }
+  .measure-card .icon svg { width: 100%; height: 100%; display: block; }
+  .measure-card h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    font-size: 1.25rem;
+    line-height: 1;
+    margin-top: 0.5rem;
+  }
+  .measure-card p {
+    font-size: 0.9rem; line-height: 1.5;
+    color: var(--cream-muted-strong);
+  }
+  .measure-card .vendors {
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid var(--cream-border);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--cream-muted);
+    font-weight: 500;
+  }
+
+  /* ============= CTA (red) ============= */
+  .cta {
+    background: var(--red);
+    color: var(--red-fg);
+    padding: 6rem 0;
+    text-align: center;
+    border: none;
+    position: relative;
+  }
+  .cta h2.display {
+    font-size: clamp(2.4rem, 5.5vw, 4.5rem);
+    max-width: 18ch;
+    margin: 0 auto 2rem;
+    color: var(--red-fg);
+  }
+  .cta p {
+    font-size: 1.1rem; line-height: 1.5;
+    color: var(--red-muted-strong);
+    max-width: 50ch;
+    margin: 0 auto 2.5rem;
+  }
+  .cta-button {
+    display: inline-flex; align-items: center; gap: 0.65rem;
+    padding: 1.25rem 2.5rem;
+    background: var(--cream);
+    color: var(--red);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.15s;
+  }
+  .cta-button::after {
+    content: '→';
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 700;
+  }
+  .cta-button:hover { transform: translateY(-2px); }
+  .cta .secondary {
+    margin-top: 1.5rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    color: var(--red-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+  }
+
+  /* ============= FOOTER ============= */
+  footer.site-footer {
+    background: var(--cream);
+    color: var(--cream-fg);
+    padding: 4rem 0 2rem;
+    border: none;
+    border-top: 4px solid var(--red);
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+  .footer-brand .footer-logo {
+    display: flex; align-items: center; gap: 0.6rem;
+    margin-bottom: 1rem;
+    color: var(--red);
+  }
+  .footer-brand .footer-logo svg { height: 1.3em; width: auto; }
+  .footer-brand .footer-wordmark {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  color: var(--red); }
+  .footer-brand p {
+    color: var(--cream-muted-strong);
+    font-size: 0.92rem;
+    line-height: 1.55;
+    max-width: 28ch;
+  }
+  .footer-col h4 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: var(--cream-muted);
+    margin-bottom: 1.25rem;
+    font-weight: 700;
+  }
+  .footer-col a, .footer-col span { display: block;
+    color: var(--cream-fg);
+    text-decoration: none;
+    font-size: 0.95rem;
+    margin-bottom: 0.6rem;
+    transition: color 0.15s; }
+  .footer-col a:hover { color: var(--red); }
+  .footer-bottom {
+    padding-top: 2rem;
+    border-top: 1px solid var(--cream-border);
+    display: flex; justify-content: space-between;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: var(--cream-muted);
+  }
+
+  /* ============= RESPONSIVE ============= */
+  @media (max-width: 900px) {
+    .hero-meta { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    .hero-meta .lead-text { grid-column: span 2; }
+    .problem-grid { grid-template-columns: 1fr; }
+    .values { grid-template-columns: 1fr; }
+    .measure-grid { grid-template-columns: 1fr 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .nav-links { display: none; }
+  }
+  @media (max-width: 600px) {
+    .measure-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .footer-bottom { flex-direction: column; gap: 0.75rem; }
+    section { padding: 4rem 0; }
+    .hero { padding: 3.5rem 0 4.5rem; }
+  }
+
+  /* ============= CONTACT PAGE ============= */
+  .accent-light { color: var(--red-fg); opacity: 0.55; }
+
+  .hero-meta-contact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .hero-meta-contact .item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .hero-meta-contact .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--red-muted);
+  }
+  .hero-meta-contact .value {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 1.05rem;
+    color: var(--red-fg);
+    font-weight: 500;
+  }
+
+  .contact-section {
+    background: var(--cream);
+    color: var(--cream-fg);
+    padding: 5rem 2rem 6rem;
+  }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 4rem;
+    align-items: start;
+  }
+  .contact-aside .display { font-size: clamp(2rem, 4vw, 3.2rem); margin: 1rem 0 0.4rem; }
+  .contact-aside .role {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 1.5rem;
+  }
+  .contact-bio {
+    color: var(--cream-muted-strong);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 38ch;
+  }
+  .contact-direct {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-top: 1px solid var(--cream-border);
+    padding-top: 1.5rem;
+  }
+  .direct-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .direct-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--cream-muted);
+    font-weight: 700;
+  }
+  .direct-value {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 1.05rem;
+    color: var(--cream-fg);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  a.direct-value:hover { color: var(--red); }
+
+  .contact-form-wrap .form-h2 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    margin: 1rem 0 0.8rem;
+  }
+  .form-intro {
+    color: var(--cream-muted-strong);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 50ch;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  .field-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+  .field { display: flex; flex-direction: column; gap: 0.4rem; }
+  .field label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--cream-muted);
+    font-weight: 700;
+  }
+  .field input,
+  .field select,
+  .field textarea {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 1rem;
+    color: var(--cream-fg);
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--cream-border);
+    padding: 0.6rem 0;
+    outline: none;
+    transition: border-color 0.2s;
+    border-radius: 0;
+  }
+  .field textarea {
+    border: 1px solid var(--cream-border);
+    padding: 0.8rem 1rem;
+    resize: vertical;
+    line-height: 1.5;
+    min-height: 120px;
+  }
+  .field input:focus,
+  .field select:focus,
+  .field textarea:focus {
+    border-color: var(--red);
+  }
+  .field select {
+    cursor: pointer;
+    appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, var(--cream-fg) 50%),
+                      linear-gradient(135deg, var(--cream-fg) 50%, transparent 50%);
+    background-position: calc(100% - 14px) 50%, calc(100% - 9px) 50%;
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat;
+    padding-right: 2rem;
+  }
+  .form-submit {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+  .form-submit .cta-button {
+    background: var(--red);
+    color: var(--red-fg);
+    border: none;
+    cursor: pointer;
+  }
+  .form-submit .cta-button:hover { background: var(--red-deep); }
+  .form-note {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--cream-muted);
+  }
+
+  .form-success {
+    border-top: 1px solid var(--cream-border);
+    padding-top: 2rem;
+    margin-top: 2rem;
+  }
+  .form-success .display { font-size: 2rem; margin: 0.5rem 0 1rem; }
+  .form-success p { color: var(--cream-muted-strong); line-height: 1.6; max-width: 50ch; }
+
+  @media (max-width: 880px) {
+    .hero-meta-contact { grid-template-columns: 1fr; gap: 1.25rem; }
+    .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .field-row { grid-template-columns: 1fr; }
+    .contact-section { padding: 3.5rem 1.5rem 4rem; }
+  }
+
+  /* ============= CONTACT — REFINED ============= */
+  .hero-compact {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  @media (max-width: 480px) {
+  }
+  /* Override the larger h2 sizes set earlier in this stylesheet */
+  .contact-aside .display,
+  .contact-form-wrap .form-h2 {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    margin: 0 0 0.6rem;
+  }
+  .field-hint {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.55rem;
+    letter-spacing: 0.2em;
+    color: var(--cream-muted);
+    font-weight: 400;
+    margin-left: 0.5rem;
+  }
+
+  /* File input — visually consistent with other form fields. The
+     native input is hidden and the visible button + filename is
+     wrapped in a label so click-through still works. */
+  .file-input-wrap { position: relative; }
+  .file-input-wrap input[type="file"] {
+    position: absolute;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  .file-input-label {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--cream-border);
+    cursor: pointer;
+    transition: border-color 0.2s;
+  }
+  .file-input-wrap input[type="file"]:focus + .file-input-label {
+    border-color: var(--red);
+  }
+  .file-input-button {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--red);
+    border: 1px solid var(--red);
+    padding: 0.5rem 1rem;
+    flex-shrink: 0;
+    font-weight: 700;
+    transition: background 0.15s, color 0.15s;
+  }
+  .file-input-label:hover .file-input-button {
+    background: var(--red);
+    color: var(--red-fg);
+  }
+  .file-input-name {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 0.95rem;
+    color: var(--cream-muted-strong);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .file-input-name.has-file { color: var(--cream-fg); font-weight: 500; }
+
+  .nav-phone {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--red-fg);
+    text-decoration: none;
+    opacity: 0.9;
+    transition: opacity 0.15s;
+    white-space: nowrap;
+  }
+  .nav-phone:hover { opacity: 1; }
+  @media (max-width: 760px) {
+    .nav-phone { display: none; }
+  }
+
+  /* === CREAM TOP BAR + RED LOGO (v9 override) === */
+  .nav, nav.top {
+    background: var(--cream);
+    border-bottom: 1px solid var(--cream-border);
+    color: var(--cream-fg);
+  }
+  .nav-logo, .nav-logo a, .nav-logo .name {
+    color: var(--red);
+  }
+  .nav-links a,
+  .nav-links .nav-dropdown-trigger {
+    color: var(--cream-fg);
+    background: transparent;
+    border: none;
+    transition: color 0.15s;
+  }
+  .nav-links a:hover,
+  .nav-links .nav-dropdown-trigger:hover,
+  .nav-links a.active {
+    color: var(--red);
+  }
+  .nav-phone {
+    color: var(--cream-fg);
+    opacity: 1;
+  }
+  .nav-phone:hover { color: var(--red); }
+  .nav-cta {
+    background: var(--red);
+    color: var(--cream);
+  }
+  .nav-cta:hover {
+    background: var(--red-deep);
+    color: var(--cream);
+  }
+  /* CTA stack — small phone link sits beneath the button */
+  .nav-cta-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.35rem;
+  }
+  .nav-cta-stack .nav-phone {
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+  }
+  /* Dropdown menu still sits on a cream surface — make sure menu items
+     remain readable. The menu itself is rendered via existing rules; we
+     just ensure its surface and text colour fit the cream nav. */
+  .nav-dropdown-menu {
+    background: var(--cream);
+    border: 1px solid var(--cream-border);
+  }
+  .nav-dropdown-menu a {
+    color: var(--cream-fg);
+  }
+  .nav-dropdown-menu a:hover {
+    background: rgba(196, 49, 36, 0.08);
+    color: var(--red);
+  }
+  .nav-dropdown-menu .meta {
+    color: var(--cream-muted);
+  }
+
+  /* === NAV INNER (v14) — align nav content with page .wrap === */
+  .nav { padding: 0; }
+  .nav-inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0.85rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  /* Restore stickiness behaviour from .nav (already there); ensure nav
+     remains a positioning context. */
+
+  /* === NAV TOP padding reset (v14) === */
+  nav.top { padding: 0 !important; }
+
+  /* === CTA H2 SHRINK (v15 universal) === */
+  .cta h2, .cta .display { font-size: clamp(1.7rem, 3.4vw, 3rem) !important; margin-bottom: 1.5rem; }
+
+  /* === CONTACT HERO H1 (v17) — beat .hero h1 specificity === */
+  .hero h1.hero-h1-compact,
+  h1.display.hero-h1-compact {
+    font-size: clamp(1.4rem, 2.6vw, 2.1rem);
+    max-width: none;
+    margin-bottom: 1.5rem;
+    white-space: nowrap;
+  }
+  @media (max-width: 600px) {
+    .hero h1.hero-h1-compact,
+    h1.display.hero-h1-compact {
+      white-space: normal;
+      font-size: 1.4rem;
+    }
+  }
+
+  /* === NAV TOP CONSISTENCY (v18) — match nav.nav layout === */
+  nav.top { padding: 0 !important; background: var(--cream); border-bottom: 1px solid var(--cream-border); }
+  nav.top .nav-inner {
+    max-width: 1300px !important;
+    margin: 0 auto !important;
+    padding: 0.85rem 2rem !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    gap: 2rem;
+  }
+  nav.top .nav-logo {
+    color: var(--red);
+    font-size: 1rem;
+  }
+  nav.top .nav-logo svg { height: 1.05em; width: auto; }
+  nav.top .nav-logo .name {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 1.3rem;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  }
+
+  /* === NAV TOP THIN (v19) — match forside dimensions === */
+  nav.top .nav-cta {
+    padding: 0.5rem 0.95rem !important;
+    font-size: 0.65rem !important;
+    letter-spacing: 0.2em !important;
+  }
+  nav.top .nav-phone {
+    font-size: 0.55rem !important;
+    letter-spacing: 0.15em !important;
+  }
+  nav.top .nav-cta-stack {
+    gap: 0.25rem !important;
+  }
+  nav.top .wrap.nav-inner,
+  nav.top .nav-inner {
+    max-width: 1300px !important;
+    padding: 0.85rem 2rem !important;
+    margin: 0 auto !important;
+  }
+
+  /* Emco Danmark wordmark - stablet slab serif logo */
+  .emco-wordmark {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 0.92;
+    color: var(--red);
+    font-family: 'Roboto Slab', 'Roboto Slab Fallback', Georgia, serif;
+  }
+  .emco-wordmark .emco-line-top {
+    font-weight: 900;
+    font-size: 1.5rem;
+    letter-spacing: -0.01em;
+  }
+  .emco-wordmark .emco-line-bottom {
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 0;
+    margin-top: 0.05em;
+  }
+  .emco-wordmark-footer {
+    color: var(--red);
+  }
+  .emco-wordmark-footer .emco-line-top {
+    font-size: 1.85rem;
+  }
+  .emco-wordmark-footer .emco-line-bottom {
+    font-size: 1.35rem;
+  }
+  /* Sørg for at logoet i nav stadig får rød farve på cream-nav siderne */
+  .nav-logo .emco-wordmark { color: var(--red); }
+</style>
+</head>
+<body>
+
+<!-- ============= MOCKUP BAND ============= -->
+<div class="mockup-band">
+  MOCKUP · EMCO DANMARK · KONTAKT · <a href="index.html">← TILBAGE TIL FORSIDEN</a>
+</div>
+
+<!-- ============= NAV ============= -->
+<nav class="top">
+    <div class="wrap nav-inner">
+    <a class="nav-logo" href="index.html">
+      <div class="emco-wordmark" aria-label="Emco Danmark">
+        <span class="emco-line-top">Emco</span>
+        <span class="emco-line-bottom">Danmark</span>
+      </div>
+    </a>
+    <div class="nav-right">
+      <div class="nav-links">
+      <a href="emco-loesning.html">Løsning</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" type="button" aria-haspopup="true" aria-expanded="false">Leverandører</button>
+        <div class="nav-dropdown-menu" role="menu">
+          <a href="emco-controls.html" role="menuitem"><span>Emco Controls</span><span class="meta">DP-Flow</span></a>
+          <a href="emco-fuji.html" role="menuitem"><span>Fuji Electric</span><span class="meta">Transmittere</span></a>
+          <a href="emco-valves.html" role="menuitem"><span>Lisberg Valves</span><span class="meta">Manifolds</span></a>
+        </div>
+      </div>
+    </div>
+      <div class="nav-cta-stack">
+        <a class="nav-cta active" href="emco-kontakt.html">Kontakt os →</a>
+        <a href="tel:+4533550162" class="nav-phone">+45 33 55 01 62</a>
+      </div>
+    </div>
+  </div>
+    
+  </nav>
+
+<!-- ============= BREADCRUMB ============= -->
+<div class="breadcrumb">
+  <div class="wrap breadcrumb-inner">
+    <a href="index.html">Emco Danmark</a>
+    <span class="sep">/</span>
+    <span class="current">Kontakt</span>
+  </div>
+</div>
+
+<!-- ============= HERO ============= -->
+<header class="hero hero-compact">
+  <div class="wrap">
+    <h1 class="display hero-h1-compact">Hvordan kan vi <span class="accent-light">hjælpe?</span></h1>
+  </div>
+</header>
+
+<!-- ============= CONTACT FORM ============= -->
+<section class="contact-section">
+  <div class="wrap contact-grid">
+    <div class="contact-aside">
+      <h2 class="display">Allan Nelbom</h2>
+      <p class="role">Salgsansvarlig</p>
+      <p class="contact-bio">Allan har 20+ års erfaring med dimensionering af måleløsninger til danske procesanlæg. Han svarer typisk inden for samme arbejdsdag.</p>
+
+      <div class="contact-direct">
+        <div class="direct-item">
+          <span class="direct-label">Direkte</span>
+          <a href="tel:+4533550162" class="direct-value">+45 33 55 01 62</a>
+        </div>
+        <div class="direct-item">
+          <span class="direct-label">Mail</span>
+          <a href="mailto:an@emcodanmark.dk" class="direct-value">an@emcodanmark.dk</a>
+        </div>
+        <div class="direct-item">
+          <span class="direct-label">Adresse</span>
+          <span class="direct-value">Høgevej 6<br>3400 Hillerød</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form-wrap">
+      <h2 class="display form-h2">Beskriv opgaven</h2>
+      <p class="form-intro">Jo mere konkret, jo hurtigere kan vi vende tilbage med et forslag. Hvis du har en P&amp;ID eller et datablad — send det med.</p>
+
+      <form class="contact-form" id="contact-form" onsubmit="return submitForm(event)">
+        <div class="field-row">
+          <div class="field">
+            <label for="name">Navn</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="field">
+            <label for="company">Virksomhed</label>
+            <input type="text" id="company" name="company">
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="email">Mail</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+        </div>
+        <div class="field">
+          <label for="topic">Hvad gælder det?</label>
+          <select id="topic" name="topic">
+            <option value="">— Vælg —</option>
+            <option value="flow">Flowmåling</option>
+            <option value="level">Levelmåling</option>
+            <option value="tryk">Tryk- og DP-måling</option>
+            <option value="temp">Temperaturmåling</option>
+            <option value="fittings">Fittings og manifolds</option>
+            <option value="andet">Noget andet</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Beskrivelse af opgaven</label>
+          <textarea id="message" name="message" rows="6" required placeholder="Eks. medie, tryk, temperatur, rørdimension, præcisionskrav, certificeringer…"></textarea>
+        </div>
+                <div class="field">
+          <label for="attachment">Vedhæft fil <span class="field-hint">(P&amp;ID, datablad, billede)</span></label>
+          <div class="file-input-wrap">
+            <input type="file" id="attachment" name="attachment" accept=".pdf,.png,.jpg,.jpeg,.gif,.dwg,.dxf,.doc,.docx,.xls,.xlsx,.txt" onchange="updateFileLabel(this)">
+            <label for="attachment" class="file-input-label">
+              <span class="file-input-button">Vælg fil</span>
+              <span class="file-input-name" id="file-input-name">Ingen fil valgt</span>
+            </label>
+          </div>
+        </div>
+<div class="form-submit">
+          <button type="submit" class="cta-button">Send forespørgsel →</button>
+          <span class="form-note">Vi vender tilbage inden for én arbejdsdag.</span>
+        </div>
+      </form>
+
+      <div class="form-success" id="form-success" hidden>
+        <div class="eyebrow"><span class="num">✓</span>TAK</div>
+        <h3 class="display">Din mail er klar</h3>
+        <p>Vi har åbnet dit mailprogram med din besked. Hvis du har valgt en fil, så vedhæft den i mailen og tryk send — så vender Allan tilbage hurtigst muligt.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= FOOTER ============= -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+        <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="emco-wordmark emco-wordmark-footer" aria-label="Emco Danmark">
+              <span class="emco-line-top">Emco</span>
+              <span class="emco-line-bottom">Danmark</span>
+            </div>
+        </div>
+        <p>Flow-, level- og temperaturmåling for dansk industri. Kvalitetsleverandører samlet i én løsning.</p>
+      </div>
+        <div class="footer-col">
+          <h4>Om os</h4>
+          <a href="emco-loesning.html">Løsning</a>
+          <a href="index.html#brands">Leverandører</a>
+        </div>
+        <div class="footer-col">
+          <h4>Adresse</h4>
+          <span>Høgevej 6</span>
+          <span>3400 Hillerød</span>
+        </div>
+        <div class="footer-col">
+          <h4>Kontakt</h4>
+          <a href="tel:+4533550162">+45 33 55 01 62</a>
+          <a href="mailto:an@emcodanmark.dk">an@emcodanmark.dk</a>
+          <a href="emco-kontakt.html">Skriv til os</a>
+        </div>
+      </div>
+    <div class="footer-bottom">
+        <span>Emco Danmark Instrumentering ApS · CVR-nr. 12345678</span>
+      </div>
+  </div>
+</footer>
+
+<script>
+  // Dropdown: click/touch toggle (hover handles desktop pointer)
+  document.querySelectorAll('.nav-dropdown').forEach(function(dd) {
+    var trigger = dd.querySelector('.nav-dropdown-trigger');
+    if (!trigger) return;
+    trigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var isOpen = dd.classList.toggle('open');
+      trigger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+  });
+  document.addEventListener('click', function() {
+    document.querySelectorAll('.nav-dropdown.open').forEach(function(dd) {
+      dd.classList.remove('open');
+      var t = dd.querySelector('.nav-dropdown-trigger');
+      if (t) t.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
+
+<script>
+  function updateFileLabel(input) {
+    var nameEl = document.getElementById('file-input-name');
+    if (input.files && input.files.length > 0) {
+      var f = input.files[0];
+      var sizeMB = (f.size / (1024 * 1024)).toFixed(1);
+      nameEl.textContent = f.name + ' · ' + sizeMB + ' MB';
+      nameEl.classList.add('has-file');
+    } else {
+      nameEl.textContent = 'Ingen fil valgt';
+      nameEl.classList.remove('has-file');
+    }
+  }
+
+  function submitForm(e) {
+    e.preventDefault();
+    var f = document.getElementById('contact-form');
+    var name    = (f.name.value    || '').trim();
+    var company = (f.company.value || '').trim();
+    var email   = (f.email.value   || '').trim();
+    var phone   = (f.phone.value   || '').trim();
+    var topic   = (f.topic.value   || '').trim();
+    var msg     = (f.message.value || '').trim();
+    var fileEl  = f.attachment;
+    var fileName = (fileEl && fileEl.files && fileEl.files.length > 0)
+                   ? fileEl.files[0].name : '';
+
+    var topicLabels = {
+      flow: 'Flowm\u00e5ling',
+      level: 'Levelm\u00e5ling',
+      tryk: 'Tryk- og DP-m\u00e5ling',
+      temp: 'Temperaturm\u00e5ling',
+      fittings: 'Fittings og manifolds',
+      andet: 'Andet'
+    };
+
+    var subject = 'Foresp\u00f8rgsel'
+      + (topic ? ' \u00b7 ' + topicLabels[topic] : '')
+      + (name ? ' fra ' + name : '');
+
+    var body =
+        'Navn: ' + name + '\n'
+      + 'Virksomhed: ' + company + '\n'
+      + 'Mail: ' + email + '\n'
+      + 'Telefon: ' + phone + '\n'
+      + 'Omr\u00e5de: ' + (topic ? topicLabels[topic] : '\u2014') + '\n\n'
+      + 'Beskrivelse:\n' + msg + '\n';
+
+    if (fileName) {
+      body += '\n---\n'
+            + 'NB: Husk at vedh\u00e6fte filen "' + fileName + '" i mailen, '
+            + 'f\u00f8r du sender. Mailprogrammer tillader ikke automatisk '
+            + 'vedh\u00e6ftning fra hjemmesider.\n';
+    }
+
+    var mailto = 'mailto:an@emcodanmark.dk'
+               + '?subject=' + encodeURIComponent(subject)
+               + '&body=' + encodeURIComponent(body);
+
+    window.location.href = mailto;
+    document.getElementById('form-success').hidden = false;
+    return false;
+  }
+</script>
+
+
+<!-- ===== EMCO MOBILE MENU (injected) ===== -->
+<style>
+  .emco-burger{
+    display:none; position:fixed; z-index:1002;
+    top:14px; right:16px;
+    width:44px; height:44px; padding:0;
+    background:#f0ede5; border:1px solid rgba(196,49,36,0.35);
+    border-radius:8px; cursor:pointer;
+  }
+  body.emco-menu-open .emco-burger{ background:transparent; border-color:rgba(240,237,229,0.4); }
+  body.emco-menu-open .emco-burger span::before,
+  body.emco-menu-open .emco-burger span::after{ background:#f0ede5; }
+  .emco-burger span,
+  .emco-burger span::before,
+  .emco-burger span::after{
+    content:""; position:absolute; left:50%; width:20px; height:2px;
+    background:#c43124; border-radius:2px; transition:transform .25s ease, opacity .2s ease;
+    transform:translateX(-50%);
+  }
+  .emco-burger span{ top:50%; margin-top:-1px; }
+  .emco-burger span::before{ top:-7px; }
+  .emco-burger span::after{ top:7px; }
+  body.emco-menu-open .emco-burger span{ background:transparent; }
+  body.emco-menu-open .emco-burger span::before{ transform:translateX(-50%) translateY(7px) rotate(45deg); }
+  body.emco-menu-open .emco-burger span::after{ transform:translateX(-50%) translateY(-7px) rotate(-45deg); }
+
+  .emco-mobile-nav{
+    position:fixed; inset:0; z-index:1001;
+    background:#c43124; color:#f0ede5;
+    display:flex; flex-direction:column; justify-content:center;
+    gap:0.35rem; padding:5rem 2rem 3rem;
+    transform:translateY(-100%); transition:transform .32s cubic-bezier(.4,0,.2,1);
+    overflow-y:auto;
+  }
+  body.emco-menu-open .emco-mobile-nav{ transform:translateY(0); }
+  .emco-mobile-nav a{
+    color:#f0ede5; text-decoration:none;
+    font-family:'Barlow Condensed','Inter Tight',sans-serif;
+    font-weight:700; font-size:1.9rem; letter-spacing:-0.01em;
+    text-transform:uppercase; padding:0.55rem 0;
+    border-bottom:1px solid rgba(240,237,229,0.18);
+  }
+  .emco-mobile-nav a:last-child{ border-bottom:none; }
+  .emco-mobile-nav a.sub{
+    font-size:1.05rem; font-weight:500; text-transform:none;
+    letter-spacing:0.02em; opacity:0.85; padding:0.4rem 0 0.4rem 1rem;
+    border-bottom:1px solid rgba(240,237,229,0.10);
+  }
+  .emco-mobile-nav .grouplabel{
+    font-family:'JetBrains Mono',monospace; font-size:0.7rem;
+    letter-spacing:0.3em; text-transform:uppercase;
+    opacity:0.6; margin-top:1rem; padding-bottom:0.3rem;
+  }
+  .emco-mobile-nav .mphone{
+    margin-top:1.5rem; font-family:'JetBrains Mono',monospace;
+    font-size:0.95rem; font-weight:500; letter-spacing:0.12em;
+    opacity:0.9; text-transform:none; border-bottom:none;
+  }
+  @media (max-width:900px){
+    .emco-burger{ display:block; }
+  }
+</style>
+
+<button class="emco-burger" type="button" aria-label="Åbn menu" aria-expanded="false" aria-controls="emcoMobileNav">
+  <span aria-hidden="true"></span>
+</button>
+
+<nav class="emco-mobile-nav" id="emcoMobileNav" aria-label="Mobilnavigation">
+  <a href="index.html">Forside</a>
+  <a href="emco-loesning.html">Løsning</a>
+  <div class="grouplabel">Leverandører</div>
+  <a class="sub" href="emco-controls.html">Emco Controls — DP-Flow</a>
+  <a class="sub" href="emco-fuji.html">Fuji Electric — Transmittere</a>
+  <a class="sub" href="emco-valves.html">Lisberg Valves — Manifolds</a>
+  <a href="emco-kontakt.html">Kontakt os</a>
+  <a class="mphone" href="tel:+4533550162">+45 33 55 01 62</a>
+</nav>
+
+<script>
+(function(){
+  var burger = document.querySelector('.emco-burger');
+  var nav = document.getElementById('emcoMobileNav');
+  if(!burger || !nav) return;
+  var body = document.body;
+  function close(){
+    body.classList.remove('emco-menu-open');
+    burger.setAttribute('aria-expanded','false');
+    burger.setAttribute('aria-label','Åbn menu');
+  }
+  function toggle(){
+    var open = body.classList.toggle('emco-menu-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.setAttribute('aria-label', open ? 'Luk menu' : 'Åbn menu');
+  }
+  burger.addEventListener('click', toggle);
+  nav.addEventListener('click', function(e){ if(e.target.tagName === 'A') close(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') close(); });
+  window.addEventListener('resize', function(){ if(window.innerWidth > 900) close(); });
+})();
+</script>
+<!-- ===== END EMCO MOBILE MENU ===== -->
+
+</body>
+</html>

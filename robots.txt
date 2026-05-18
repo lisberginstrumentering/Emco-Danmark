@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://emcodanmark.dk/sitemap.xml
